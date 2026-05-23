@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .form, .preview {
+    width: 100%;
+  }
+}
+
+.form {
+  width: 35%;
+}
+
+.preview-wrapper {
+  width: 65%;
+}
+
+.preview {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.score-box {
+  background: #fff3cd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ATS SAFE (no styling tricks) */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-break {
+  page-break-before: always;
+}

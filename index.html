@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATS Resume Builder Pro+</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ATS Resume Builder Pro+</h1>
+
+  <div class="main">
+
+    <!-- FORM -->
+    <div class="form">
+      <input type="text" id="name" placeholder="Full Name">
+
+      <textarea id="contact" placeholder="Phone, Address"></textarea>
+      <input type="email" id="mail" placeholder="Email">
+
+      <textarea id="about" placeholder="Professional Summary"></textarea>
+
+      <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+      <textarea id="experience" placeholder="Experience (one per line)"></textarea>
+
+      <textarea id="education" placeholder="Education (one per line)"></textarea>
+
+      <textarea id="certification" placeholder="Certifications (comma separated)"></textarea>
+
+
+      <button onclick="generateResume()">Generate Resume</button>
+      <button onclick="downloadPDF()">Download ATS PDF</button>
+      <button onclick="saveData()">Save</button>
+      <button onclick="loadData()">Load</button>
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="preview-wrapper">
+      <div class="score-box" id="scoreBox">
+        <h3>ATS Score: <span id="score">0</span>/100</h3>
+        <p id="suggestions"></p>
+      </div>
+
+      <div class="preview" id="resumePreview">
+        <h2>Resume Preview</h2>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
